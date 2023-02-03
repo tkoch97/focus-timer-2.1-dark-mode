@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+  --bg-colorLight: linear-gradient(190.51deg,#F5F5F5 0%, 
+  rgba(220, 220, 220, 0.84268) 
+  20%, rgba(201, 201, 201, 0.734) 
+  40%, rgba(196, 195, 195, 0.843) 
+  60%, rgba(126, 126, 126, 0.84) 
+  80%, #e3e3e3 100%);
+  --bg-colorDark: linear-gradient(189.96deg, #000000 -0.24%, 
+  rgba(10, 11, 17, 0.84268) 
+  19.85%, rgba(0, 0, 0, 0.84) 
+  39.43%, rgba(4, 4, 7, 0.8427) 
+  59.45%, rgba(11, 11, 12, 0.84) 
+  80.15%, #17181D 100.24%);
+
+  --timer-colorLightMode: #323238;
+  --timer-colorDarkMode: #8F8F8F;
+  --icons-colorLightMode: #323238;
+  --bg-soundButtonsLight: #E1E1E6;
+  --bg-soundButtonsDark: #8F8F8F;
+  --footer-color: #8F8F8F;
+  --title-color: #8F8F8F;
+
+  /* Font family */
+  --ff-general: 'Roboto', sans-serif;
+
+  /* Font size */
+  font-size: 62.5%;
+  --fs-title: clamp(2.0rem, 1.5rem + 5vw, 2.4rem);
+  --fs-timer: clamp(9.0rem, 8.0rem + 5vw, 12.6rem);
+  --fs-footer: clamp(1rem, 1rem + 1vw, 1.5rem);
+
+  /* Buttons size */
+  --size-controls: clamp(3.6rem, 2.0rem + 5vw, 6.5rem);
+  --width-buttonsSongs: clamp(7.9rem, 5.0rem + 5vw, 12.9rem);
+  --height-buttonsSongs: clamp(8.7rem, 6.0rem + 5vw, 13.9rem);
+  --sizeIcons-buttonsSongs: clamp(3.0rem, 1.5rem + 5vw, 4.1rem);
+}
+
+body {
+  background: var(--bg-colorLight);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  height: 100vh;
+  font-family: var(--ff-general);
+}
+
+.bodyDark {
+  background: var(--bg-colorDark);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+}
+
+h1 {
+  font-size: var(--fs-title);
+  font-weight: 500;
+  line-height: 2.44rem;
+  text-transform: uppercase;
+  color: var(--title-color);
+  margin-bottom: clamp(2.0rem, 2.5rem + 1vw, 5.7rem);
+}
+
+.theme-container{
+  position: fixed;
+  top: 2.5rem;
+  right: 2.5rem;
+}
+
+.theme-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.8rem;
+}
+
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 2.8rem; */
+}
+
+main .container .timer {
+  display: flex;
+  justify-content: center;
+  font-size: var(--fs-timer);
+  color: var(--timer-colorLightMode);
+}
+
+main .container .timerDark {
+  color: var(--timer-colorDarkMode);
+}
+
+.hide {
+  display: none;
+}
+
+.controls {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.controls button:hover svg path{
+  fill: #fff;
+  transition: 0.5s;
+}
+
+.controls button svg {
+  width: var(--size-controls);
+}
+
+main .songButtons {
+  display: grid;
+  gap:1.8rem;
+  grid-template-areas:
+  "button1 buton2"
+  "button3 button4";
+}
+
+.songButtons button {
+  border: none;
+  padding: 2.5rem;
+  width: var(--width-buttonsSongs);
+  height: var(--height-buttonsSongs);
+  background-color: var(--bg-soundButtonsLight);
+  border-radius: 2.4rem;
+  box-shadow: 0rem .4rem .7rem rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.songButtons button:hover svg path {
+  fill: #fff;
+  transition: 0.5s;
+}
+
+.songButtons .forest:hover {
+  background-color: #A5BB26;
+}
+
+.songButtons .forestClicked {
+  box-shadow: none;
+  background-color: #A5BB26;
+}
+
+.songButtons .rain:hover {
+  background-color: #02799D;
+}
+
+.songButtons .rainClicked {
+  box-shadow: none;
+  background-color: #02799D;
+}
+
+.songButtons .coffeeShop:hover {
+  background-color: #a18262;
+}
+
+.songButtons .coffeeShopClicked {
+  box-shadow: none;
+  background-color: #a18262;
+}
+
+.songButtons .fireplace:hover {
+  background-color: #d25100;
+}
+
+.songButtons .fireplaceClicked {
+  box-shadow: none;
+  background-color: #d25100;
+}
+
+
+footer {
+  /* position: absolute;
+  bottom: 5rem; */
+  padding: 7.0rem 3.0rem 0rem;
+  text-align: center;
+  font-family: var(--ff-general);
+  text-transform: uppercase;
+  color: var(--footer-color);
+  font-size: var(--fs-footer);
+  line-height: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--footer-color);
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Media queries */
+
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    gap: 10.0rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    gap: 18.0rem;
+  }
+
+  .songButtons button svg {
+    transform: scale(1.3);
+  }
+
+}
+
+
+
+/* Animations */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
