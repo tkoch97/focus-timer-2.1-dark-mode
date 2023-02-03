@@ -4,7 +4,8 @@ import {
   controls,
   buttonsSounds,
   iconsButtonsSounds,
-  buttonsTheme
+  buttonsTheme,
+  volumeControl,
 } from "./elements.js"
 
 export function Events ({controls, sounds, timer, theme}) {
@@ -115,17 +116,19 @@ export function Events ({controls, sounds, timer, theme}) {
     }
   })
 
+  volumeControl.addEventListener('input', function(){
+    sounds.changeVolume();
+  })
+
   buttonsTheme.lightMode.addEventListener('click', function(){
     buttonsTheme.darkMode.classList.remove('hide');
     buttonsTheme.lightMode.classList.add('hide');
-    sounds.pressButtonSound();
     theme.toggleTheme();
   })
 
   buttonsTheme.darkMode.addEventListener('click', function(){
     buttonsTheme.lightMode.classList.remove('hide');
     buttonsTheme.darkMode.classList.add('hide');
-    sounds.pressButtonSound();
     theme.toggleTheme();
   })
 }

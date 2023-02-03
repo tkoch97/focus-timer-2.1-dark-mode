@@ -2,6 +2,7 @@ const minutesDisplay = document.querySelector(".minutes");
 const secondsDisplay = document.querySelector(".seconds");
 const body = document.querySelector("body");
 const timer = document.querySelector(".timer");
+const volumeControl = document.querySelector("#volume-control");
 const controls = {
   play: document.querySelector(".play"),
   pause: document.querySelector(".pause"),
@@ -46,4 +47,5 @@ export {
   body,
   timer,
   iconsControls,
+  volumeControl,
 }
