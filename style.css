@@ -202,11 +202,32 @@ main .songButtons {
   background-color: #d25100;
 }
 
+.coffeeShop {
+  position: relative;
+}
+
+#volume-control {
+  all:unset;
+  appearance: none;
+  background-color: #8F8F8F;
+  border-radius: 0.5rem;
+  height: 0.4rem;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+#volume-control::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #8F8F8F;
+}
+
 
 footer {
-  /* position: absolute;
-  bottom: 5rem; */
-  padding: 7.0rem 3.0rem 0rem;
+  padding: 5.0rem 3.0rem 0rem;
   text-align: center;
   font-family: var(--ff-general);
   text-transform: uppercase;
@@ -231,6 +252,10 @@ footer a:hover {
     flex-direction: row;
     gap: 10.0rem;
   }
+
+  .audioBackground {
+    padding-top: 3.0rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -240,6 +265,10 @@ footer a:hover {
 
   .songButtons button svg {
     transform: scale(1.3);
+  }
+
+  .audioBackground {
+    padding-top: 3.0rem;
   }
 
 }
