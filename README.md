@@ -1,15 +1,15 @@
 # 🪐 Rocketseat, explorer trail - stage5
-## Focus Timer 2.1 ⏱ UNDER DEVELOPMENT
+## Focus Timer 2.1 with Dark Mode⏱
 
 
 ![preview](/github/preview.png)
 
 
-> In this project I update the focus timer page 2.0 with dark mode and volume control. This page is based on the pomodoro focus method. It starts with 25 minutes on the timer (by default). But the user can manipulate the stopwatch with the add and subtract 1 minute buttons. There are also four buttons with background sounds, simulating different environments, such as forest, rainy weather, coffee shop and fireplace.
+> In this project I update the focus timer page 2.0 (for 2.1), add a dark mode and a volume control. This page is based on the pomodoro focus method. It starts with 25 minutes on the timer (by default). But the user can manipulate the stopwatch with the add and subtract 1 minute buttons. There are also four buttons with background sounds, simulating different environments, such as forest, rainy weather, coffee shop and fireplace.
 
 > This project was done as an exercise proposed by Rocketseat's Explorer course.
 
-> techniques used: mobile first, responsiviness, ES6 modules, dependency injection, clean code principes and recursivity.
+> techniques used: DOM, mobile first, responsiviness, ES6 modules, dependency injection, clean code principes and recursivity.
 
 [🔗 Click here to access](https://tkoch97.github.io/focus-timer-2.1-dark-mode/)
 

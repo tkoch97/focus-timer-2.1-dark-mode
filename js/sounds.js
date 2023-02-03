@@ -1,3 +1,4 @@
+import { volumeControl } from "./elements.js";
 export default function playSounds() {
 
     const forestSound = new Audio('./assets/audio/Floresta.wav');
@@ -6,8 +7,15 @@ export default function playSounds() {
     const fireplaceSound = new Audio('./assets/audio/Lareira.wav');
     const kitchenTimer = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/kichen-timer.mp3?raw=true");
     const buttonPress = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/button-press.wav?raw=true");
-  
-  
+
+
+  function changeVolume() {
+    forestSound.volume = volumeControl.value
+    rainSound.volume = volumeControl.value
+    coffeeShopSound.volume = volumeControl.value
+    fireplaceSound.volume = volumeControl.value
+  }
+
   function playForestSound() {
     forestSound.play();
     forestSound.loop = true;
@@ -62,7 +70,8 @@ export default function playSounds() {
     stopForestSound,
     stopRainSound,
     pressButtonSound,
-    timeEndSound
+    timeEndSound,
+    changeVolume,
   }
 
 }
