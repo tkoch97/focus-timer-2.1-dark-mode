@@ -11,7 +11,7 @@
 
 > techniques used: mobile first, responsiviness, ES6 modules, dependency injection, clean code principes and recursivity.
 
-[🔗 Click here to access](https://github.com/tkoch97/focus-timer-2.1-dark-mode.git)
+[🔗 Click here to access](https://tkoch97.github.io/focus-timer-2.1-dark-mode/)
 
 ## 🔧 Tecnologies
 
