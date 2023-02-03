@@ -9,6 +9,15 @@ const controls = {
   addMinute: document.querySelector(".addMinute"),
   subMinute: document.querySelector(".subMinute"),
 }
+
+const iconsControls = {
+  play: document.querySelector(".controls .play svg path"),
+  pause: document.querySelector(".controls .pause svg path"),
+  stop: document.querySelector(".controls .stop svg path"),
+  addMinute: document.querySelector(".controls .addMinute svg path"),
+  subMinute: document.querySelector(".controls .subMinute svg path"),
+}
+
 const buttonsSounds = {
   forest: document.querySelector(".forest"),
   rain: document.querySelector(".rain"),
@@ -36,4 +45,5 @@ export {
   buttonsTheme,
   body,
   timer,
+  iconsControls,
 }
