@@ -5,7 +5,7 @@
 ![preview](/github/preview.png)
 
 
-> In this project I update the focus timer page 2.0 (for 2.1), add a dark mode and a volume control. This page is based on the pomodoro focus method. It starts with 25 minutes on the timer (by default). But the user can manipulate the stopwatch with the add and subtract 1 minute buttons. There are also four buttons with background sounds, simulating different environments, such as forest, rainy weather, coffee shop and fireplace.
+> In this project I updated the focus timer page 2.0 (for 2.1), add a dark mode and a volume control. This page is based on the pomodoro focus method. It starts with 25 minutes on the timer (by default). But the user can manipulate the stopwatch with the add and subtract 1 minute buttons. There are also four buttons with background sounds, simulating different environments, such as forest, rainy weather, coffee shop and fireplace.
 
 > This project was done as an exercise proposed by Rocketseat's Explorer course.
 
